@@ -30,10 +30,6 @@
 
 
 var work = {
-  "position": "",
-  "employer": "",
-  "yeasWorked": "",
-  "city": ""
 };
 
 work.position = "developer";
@@ -42,15 +38,13 @@ work.yearsWorked = "1";
 work.city = "hartzelia";
 
 var education = {
-  "schoolName": "",
-  "yearsAttending": ""
 };
 
 education["name"] = "Bahcesehir university";
 education["yearsAttending"] = "5";
 
-$("#header").append("<div>"+work["position"]+"</div>");
-$("#header").append("<div>"+education.name+"</div>"");
+$("#header").append(work["position"]);
+$("#header").append(education.name);
 
 
 
