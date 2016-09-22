@@ -21,8 +21,12 @@ var fName = HTMLheaderName.replace("%data%", bio.Name);
 $("#header").append(fName);
 var fRole = HTMLheaderRole.replace("%data%", bio.Role);
 $("#header").append(fRole);
-var fSkills = HTMLskills.replace("%data%", bio.skills);
-$("#header").append(fSkills);
+var fSkill;
+for(var i = 0; i < 5; i++)
+{
+  fskill = HTMLskills.replace("%data%", bio.skills[i]);
+  $("#header").preappend(fSkill);
+}
 var fImg = HTMLbioPic.replace("%data%", bio.Image);
 $("#header").append(fImg);
 var fMsg = HTMLwelcomeMsg.replace("%data%", bio.Message);
