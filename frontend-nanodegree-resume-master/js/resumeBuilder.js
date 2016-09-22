@@ -43,8 +43,8 @@ var education = {
 education["name"] = "Bahcesehir university";
 education["yearsAttending"] = "5";
 
-$("#main").append(work["position"]);
-$("#main").append(education.name);
+$("#header").append("<div>"+work["position"]+"</div>");
+$("#header").append("<div>"+education.name+"</div>");
 
 
 
