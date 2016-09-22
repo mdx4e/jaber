@@ -1,4 +1,4 @@
-var awesomeThoughts = "i am awesome";
-var funThoughts = awesomeThoughts.replace("awesome", "FUN");
+var awesomeThoughts = "i am AWE";
+var funThoughts = awesomeThoughts.replace("AWE", "FUN");
 
 $["#main"].append(funThoughts);
