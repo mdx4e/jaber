@@ -24,7 +24,7 @@ $("#header").append(fRole);
 var fSkill;
 for(var i = 0; i < 5; i++)
 {
-  fskill = HTMLskills.replace("%data%", bio.skills[i]);
+  fSkill = HTMLskills.replace("%data%", bio.skills[i]);
   $("#header").append(fSkill);
 }
 var fImg = HTMLbioPic.replace("%data%", bio.Image);
