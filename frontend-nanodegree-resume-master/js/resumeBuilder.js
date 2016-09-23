@@ -29,22 +29,65 @@
 
 
 
-var work = {
-};
+// var work = {
+// };
 
-work.position = "developer";
-work.employer  = "seemplex";
-work.yearsWorked = "1";
-work.city = "hartzelia";
+// work.position = "developer";
+// work.employer  = "seemplex";
+// work.yearsWorked = "1";
+// work.city = "hartzelia";
+
+// var education = {
+// };
+
+// education["name"] = "Bahcesehir university";
+// education["yearsAttending"] = "5";
+
+// $("#main").append(work["position"]+"<br>");
+// $("#main").append(education.name);
+
+
+
+
 
 var education = {
+    "schools": [
+        {
+            "city": "Taybah",
+            "major": "physics",
+            "minor": "none",
+            "graduation": "2007",
+            "information": "this major is one of the best once!"
+        },
+        {
+            "city": "istanbul",
+            "major": "computer engineering",
+            "minor": "none",
+            "graduation": "2015",
+            "information": "this major is so exciting major!"
+        }
+    ],
+    "courses": [
+        {
+            "title": "CMPE",
+            "faculty": "engineering",
+            "lecturere": "jaber"
+        }
+    ]
 };
 
-education["name"] = "Bahcesehir university";
-education["yearsAttending"] = "5";
 
-$("#main").append(work["position"]+"<br>");
-$("#main").append(education.name);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
