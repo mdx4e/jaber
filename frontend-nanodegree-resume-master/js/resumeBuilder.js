@@ -91,14 +91,14 @@ var education = {
 var bio = {
   "name":"Muhammad",
   "role":"Computer Engineer",
-  "Contact": { "mobile":"0503235331",
+  "contact": { "mobile":"0503235331",
                 "email":"muhammad.sce@gmail.com",
                 "github":"mdx4e",
                 "twitter":"muhammad.sce",
                 "location":"Taybe city, 24 southern quarters."
       },
-  "Skills":["oud player", "clever", "awesome", "human", "friendly"],
-  "Image":"images/me.jpg",
+  "skills":["oud player", "clever", "awesome", "human", "friendly"],
+  "image":"images/me.jpg",
   "welcomeMessage":"Welcome to my amazing website"
 };
 
