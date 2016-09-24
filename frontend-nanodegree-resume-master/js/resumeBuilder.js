@@ -1,16 +1,6 @@
 // var skills = ["oud player", "clever", "awesome", "human", "friendly"];
 // var url = "images/me.jpg";
 
-// var bio = {
-//   "Name":"Muhammad",
-//   "Role":"Computer Engineer",
-//   "Contact":"taybeh city 24 strret.",
-//   "Skills":skills,
-//   "Image":url,
-//   "Message":"Welcome to my amazing website"
-// };
-
-
 // var fName = HTMLheaderName.replace("%data%", bio.Name);
 // $("#header").append(fName);
 // var fRole = HTMLheaderRole.replace("%data%", bio.Role);
@@ -47,37 +37,90 @@
 // $("#main").append(education.name);
 
 
-
-
+var work = {
+    "jobs": [{
+         "employer": "Google",
+         "title": "Developer",
+         "location": "Haifa",
+         "dates": "2010-2010",
+         "description": "I have developed many application to help people in advancing their living quality."
+    },
+    {
+         "employer": "Intel",
+         "title": "Developer",
+         "location": "Haifa",
+         "dates": "2012-2014",
+         "description": "I have developed many application to advance the industry here."
+    }
+        ]
+};
 
 var education = {
     "schools": [
         {
-            "city": "Taybah",
-            "major": "physics",
-            "minor": "none",
-            "graduation": "2007",
-            "information": "this major is one of the best once!"
+            "name":"Atid High School",
+            "degree":"High school degree",
+            "location": "Taybah",
+            "major": ["physics","computer science"],
+            "date": "2005-2007",
+            "information": "this major is one of the best once!",
+            "url":"www.atid.co.il"
         },
         {
-            "city": "istanbul",
-            "major": "computer engineering",
-            "minor": "none",
-            "graduation": "2015",
-            "information": "this major is so exciting major!"
+            "name":"Bahcesehir university",
+            "degree":"B.SC Computer Engineer",
+            "location": "istanbul",
+            "major": ["computer engineering"],
+            "date": "2011-2015",
+            "information": "this major is so exciting major!",
+            "url":"http://ios.bahcesehir.edu.tr"
         }
     ],
-    "courses": [
+    "onlineCourses": [
         {
             "title": "CMPE",
+            "school":"Bahcesehir University",
+            "date":"2014",
+            "url":"http://ios.bahcesehir.edu.tr/",
             "faculty": "engineering",
             "lecturere": "jaber"
         }
     ]
 };
 
+var bio = {
+  "name":"Muhammad",
+  "role":"Computer Engineer",
+  "Contact": { "mobile":"0503235331",
+                "email":"muhammad.sce@gmail.com",
+                "github":"mdx4e",
+                "twitter":"muhammad.sce",
+                "location":"Taybe city, 24 southern quarters."
+      },
+  "Skills":["oud player", "clever", "awesome", "human", "friendly"],
+  "Image":"images/me.jpg",
+  "welcomeMessage":"Welcome to my amazing website"
+};
 
-
+var projects = {
+    "projects": [
+        {
+            "title": "capston project",
+            "date": "2015",
+            "description": "this was graduation project and made to help people in sitting in correct positions.",
+            "images": [
+                "images/20150506_161821.jpg",
+                "images/20150507_124823.jpg",
+                "images/20150523_221012.jpg",
+                "images/20150507_125421.jpg",
+                "images/20150523_230314.jpg",
+                "images/20150427_080901.jpg",
+                "images/20150503_170426.jpg",
+                "images/20150506_161821.jpg"
+            ]
+        }
+    ]
+};
 
 
 
