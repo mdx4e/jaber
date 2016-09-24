@@ -128,7 +128,7 @@ if(bio.skills != null){
       $(#"header").append(HTMLskillsStart);
       for(var i = 0; i < bio.skills.length; i++){
         fskill = HTMLskills.replace("%data%",skills[i]);
-        $(#"skill").append(fskill);
+        $(#"skills").append(fskill);
       }
     }
 
