@@ -1,41 +1,3 @@
-// var skills = ["oud player", "clever", "awesome", "human", "friendly"];
-// var url = "images/me.jpg";
-
-// var fName = HTMLheaderName.replace("%data%", bio.Name);
-// $("#header").append(fName);
-// var fRole = HTMLheaderRole.replace("%data%", bio.Role);
-// $("#header").append(fRole);
-// var fSkill;
-// for(var i = 0; i < 5; i++)
-// {
-//   fSkill = HTMLskills.replace("%data%", bio.Skills[i]);
-//   $("#header").append(fSkill);
-// }
-// var fImg = HTMLbioPic.replace("%data%", bio.Image);
-// $("#header").append(fImg);
-// var fMsg = HTMLwelcomeMsg.replace("%data%", bio.Message);
-// $("#header").append(fMsg);
-
-
-
-
-// var work = {
-// };
-
-// work.position = "developer";
-// work.employer  = "seemplex";
-// work.yearsWorked = "1";
-// work.city = "hartzelia";
-
-// var education = {
-// };
-
-// education["name"] = "Bahcesehir university";
-// education["yearsAttending"] = "5";
-
-// $("#main").append(work["position"]+"<br>");
-// $("#main").append(education.name);
-
 
 var work = {
     "jobs": [{
@@ -137,8 +99,8 @@ for(job in work.jobs)
     $("#workExperience").append(HTMLworkStart);
     var formatHTMLworkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
     var formatHTMLworkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-    vat cocat = formatHTMLworkEmployer + formatHTMLworkTitle;
-    $("#work-entry").append(cocat);
+    var cocat = formatHTMLworkEmployer + formatHTMLworkTitle;
+    $("#.work-entry:last").append(cocat);
     
 }
 
