@@ -100,7 +100,7 @@ for(job in work.jobs)
     var formatHTMLworkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
     var formatHTMLworkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
     var cocat = formatHTMLworkEmployer + formatHTMLworkTitle;
-    $("#.work-entry:last").append(cocat);
+    $(".work-entry:last").append(cocat);
     
 }
 
