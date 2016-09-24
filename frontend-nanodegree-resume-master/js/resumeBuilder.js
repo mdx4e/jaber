@@ -125,10 +125,10 @@ var projects = {
 
 if(bio.skills.length > 0){
       var fskill;
-      $(#"header").append(HTMLskillsStart);
+      $("#header").append(HTMLskillsStart);
       for(var i = 0; i < bio.skills.length; i++){
         fskill = HTMLskills.replace("%data%",skills[i]);
-        $(#"skills").append(fskill);
+        $("#skills").append(fskill);
       }
     }
 
