@@ -123,7 +123,7 @@ var projects = {
 };
 
 
-if(bio.skills != null){
+if(bio.skills.length > 0){
       var fskill;
       $(#"header").append(HTMLskillsStart);
       for(var i = 0; i < bio.skills.length; i++){
