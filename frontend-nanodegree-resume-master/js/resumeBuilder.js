@@ -104,11 +104,11 @@ for(job in work.jobs)
     
 }
 
-formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
 $("#header").append(formattedName);
-formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-formattedImage = HTMLbioPic.replace("%data%, bio.image");
-formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedImage = HTMLbioPic.replace("%data%, bio.image");
+var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 $("#header").append(fotmattedImage);
 $("#header").append(formattedWelcomeMessage);
 
