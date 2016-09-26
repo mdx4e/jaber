@@ -112,20 +112,19 @@ var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessag
 $("#header").append(fortmattedImage);
 $("#header").append(formattedWelcomeMessage);
 
-var cont = HTMLcontactGeneric.replace("%contact%", "contact");
-cont = cont.replace("%data%", bio.name);
+$("#header").append(HTMLcontact);
 var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
 var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
 var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
 var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
 var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 
-$(".flex-item").append(cont);
-$(".flex-item").append(formattedMobile);
-$(".flex-item").append(formattedEmail);
-$(".flex-item").append(formattedGithub);
-$(".flex-item").append(formattedLocation);
-$(".flex-item").append(formattedTwitter);
+$("#contacts").append(cont);
+$("#contacts").append(formattedMobile);
+$("#contacts").append(formattedEmail);
+$("#contacts").append(formattedGithub);
+$("#contacts").append(formattedLocation);
+$("#contacts").append(formattedTwitter);
 
  $("#projects").append(HTMLprojectStart);
 
