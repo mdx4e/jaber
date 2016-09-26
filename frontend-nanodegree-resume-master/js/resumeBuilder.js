@@ -132,10 +132,13 @@ $("#flex-item").append(formattedTwitter);
 var formattedProjTitle =  HTMLprojectTitle.replace("%data%",proj.projects.title);
 var formattedProjDates = HTMLprojectDates.replace("%data%",proj.projects.date);
 var formattedProjDescription = HTMLprojectDescription.replace("%data%",proj.projects.Description);
- $(".project-entry").append(HTMLprojectTitle,HTMLprojectDates,HTMLprojectDescription);
+ $(".project-entry").append(HTMLprojectTitle);
+$(".project-entry").append(HTMLprojectDates);
+$(".project-entry").append(HTMLprojectDescription);
+                           
  var formattedProjImage;
 for(var item in proj.projects.images){
-    formattedProjImage = HTMLprojectImage.replace("%data%",projects.images[item]);
+    formattedProjImage = HTMLprojectImage.replace("%data%",proj.projects.images[item]);
     $(".project-entry").append(formattedProjImage);
 }
 
