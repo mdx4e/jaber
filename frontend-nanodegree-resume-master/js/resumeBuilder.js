@@ -107,7 +107,7 @@ for(job in work.jobs)
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 $("#header").append(formattedName);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedImage = HTMLbioPic.replace("%data%, bio.image");
+var formattedImage = HTMLbioPic.replace("%data%", bio.image);
 var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 $("#header").append(fortmattedImage);
 $("#header").append(formattedWelcomeMessage);
