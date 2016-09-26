@@ -64,7 +64,7 @@ var bio = {
   "welcomeMessage":"Welcome to my amazing website"
 };
 
-var projects = {
+var proj = {
     "projects": [
         {
             "title": "capston project",
@@ -125,12 +125,12 @@ $(".flex-item").append(formattedMobile,formattedEmail,formattedGithub,formattedL
 
  $("projects").append(HTMLprojectStart);
 
-var formattedProjTitle =  HTMLprojectTitle.replace("%data%",projects.title);
-var formattedProjDates = HTMLprojectDates.replace("%data%",projects.date);
-var formattedProjDescription = HTMLprojectDescription.replace("%data%",projects.Description);
+var formattedProjTitle =  HTMLprojectTitle.replace("%data%",proj.projects.title);
+var formattedProjDates = HTMLprojectDates.replace("%data%",proj.projects.date);
+var formattedProjDescription = HTMLprojectDescription.replace("%data%",proj.projects.Description);
  $(".project-entry").append(HTMLprojectTitle,HTMLprojectDates,HTMLprojectDescription);
  var formattedProjImage;
-for(var item in projects.images){
+for(var item in proj.projects.images){
     formattedImage = HTMLprojectImage.replace("%data%",projects.images[item]);
     $(".project-entry").append(formattedImage);
 }
