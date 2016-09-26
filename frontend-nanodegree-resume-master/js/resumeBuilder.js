@@ -119,7 +119,6 @@ var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
 var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
 var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 
-$("#contacts").append(cont);
 $("#contacts").append(formattedMobile);
 $("#contacts").append(formattedEmail);
 $("#contacts").append(formattedGithub);
