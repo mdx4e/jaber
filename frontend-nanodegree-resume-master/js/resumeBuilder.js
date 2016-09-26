@@ -121,7 +121,11 @@ var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
 var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 
 $(".flex-item").append(cont);
-$(".flex-item").append(formattedMobile,formattedEmail,formattedGithub,formattedLocation,formattedTwitter);
+$(".flex-item").append(formattedMobile);
+$(".flex-item").append(formattedEmail);
+$(".flex-item").append(formattedGithub);
+$(".flex-item").append(formattedLocation);
+$(".flex-item").append(formattedTwitter);
 
  $("projects").append(HTMLprojectStart);
 
@@ -131,8 +135,8 @@ var formattedProjDescription = HTMLprojectDescription.replace("%data%",proj.proj
  $(".project-entry").append(HTMLprojectTitle,HTMLprojectDates,HTMLprojectDescription);
  var formattedProjImage;
 for(var item in proj.projects.images){
-    formattedImage = HTMLprojectImage.replace("%data%",projects.images[item]);
-    $(".project-entry").append(formattedImage);
+    formattedProjImage = HTMLprojectImage.replace("%data%",projects.images[item]);
+    $(".project-entry").append(formattedProjImage);
 }
 
 
