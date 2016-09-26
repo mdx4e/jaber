@@ -109,7 +109,7 @@ $("#header").append(formattedName);
 formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 formattedImage = HTMLbioPic.replace("%data%, bio.image");
 formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-$(#"header").append(fotmattedImage);
+$("#header").append(fotmattedImage);
 $("#header").append(formattedWelcomeMessage);
 
 var cont = HTMLcontactGeneric.replace("%contact%", "contact");
