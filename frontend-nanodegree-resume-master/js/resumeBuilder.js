@@ -120,14 +120,14 @@ var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
 var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
 var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 
-$(".flex-item").append(cont);
-$(".flex-item").append(formattedMobile);
-$(".flex-item").append(formattedEmail);
-$(".flex-item").append(formattedGithub);
-$(".flex-item").append(formattedLocation);
-$(".flex-item").append(formattedTwitter);
+$("#flex-item").append(cont);
+$("#flex-item").append(formattedMobile);
+$("#flex-item").append(formattedEmail);
+$("#flex-item").append(formattedGithub);
+$("#flex-item").append(formattedLocation);
+$("#flex-item").append(formattedTwitter);
 
- $("projects").append(HTMLprojectStart);
+ $("#projects").append(HTMLprojectStart);
 
 var formattedProjTitle =  HTMLprojectTitle.replace("%data%",proj.projects.title);
 var formattedProjDates = HTMLprojectDates.replace("%data%",proj.projects.date);
