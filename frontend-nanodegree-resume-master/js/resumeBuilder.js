@@ -57,7 +57,7 @@ var bio = {
                 "email":"muhammad.sce@gmail.com",
                 "github":"mdx4e",
                 "twitter":"muhammad.sce",
-                "location":"Taybe city, 24 southern quarters."
+                "Location":"Taybe city, 24 southern quarters."
       },
   "skills":["oud player", "clever", "awesome", "human", "friendly"],
   "image":"images/me.jpg",
@@ -69,7 +69,7 @@ var projects = {
         {
             "title": "capston project",
             "date": "2015",
-            "description": "this was graduation project and made to help people in sitting in correct positions.",
+            "Description": "this was graduation project and made to help people in sitting in correct positions.",
             "images": [
                 "images/20150506_161821.jpg",
                 "images/20150507_124823.jpg",
@@ -104,10 +104,36 @@ for(job in work.jobs)
     
 }
 
+formattedName = HTMLheaderName.replace("%data%", bio.name);
+$("#header").append(formattedName);
+formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+formattedImage = HTMLbioPic.replace("%data%, bio.image");
+formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+$(#"header").append(fotmattedImage);
+$("#header").append(formattedWelcomeMessage);
 
+var cont = HTMLcontactGeneric.replace("%contact%", "contact");
+cont = cont.replace("%data%", bio.name);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
+var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 
+$(".flex-item").append(cont);
+$(".flex-item").append(formattedMobile,formattedEmail,formattedGithub,formattedLocation,formattedTwitter);
 
+ $("projects").append(HTMLprojectStart);
 
+var formattedProjTitle =  HTMLprojectTitle.replace("%data%",projects.title);
+var formattedProjDates = HTMLprojectDates.replace("%data%",projects.date);
+var formattedProjDescription = HTMLprojectDescription.replace("%data%",projects.Description);
+ $(".project-entry").append(HTMLprojectTitle,HTMLprojectDates,HTMLprojectDescription);
+ var formattedProjImage;
+for(var item in projects.images){
+    formattedImage = HTMLprojectImage.replace("%data%",projects.images[item]);
+    $(".project-entry").append(formattedImage);
+}
 
 
 
