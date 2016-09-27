@@ -22,7 +22,7 @@ var education = {
         {
             "name":"Atid High School",
             "degree":"High school degree",
-            "location": "Taybah",
+            "Location": "Taybah",
             "major": ["physics","computer science"],
             "date": "2005-2007",
             "information": "this major is one of the best once!",
