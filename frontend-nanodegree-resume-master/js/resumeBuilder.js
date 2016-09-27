@@ -114,18 +114,18 @@ $("#header").append(formattedRole);
 $("#header").append(formattedImage);
 $("#header").append(formattedWelcomeMessage);
 
-// $("#header").append(HTMLcontact);
-// var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
-// var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
-// var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
-// var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
-// var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
+$("#header").append(HTMLcontact);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
+var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 
-// $("#contacts").append(formattedMobile);
-// $("#contacts").append(formattedEmail);
-// $("#contacts").append(formattedGithub);
-// $("#contacts").append(formattedLocation);
-// $("#contacts").append(formattedTwitter);
+$("#contacts").append(formattedMobile);
+$("#contacts").append(formattedEmail);
+$("#contacts").append(formattedGithub);
+$("#contacts").append(formattedLocation);
+$("#contacts").append(formattedTwitter);
 
 //  $("#projects").append(HTMLprojectStart);
 
