@@ -31,7 +31,7 @@ var education = {
         {
             "name":"Bahcesehir university",
             "degree":"B.SC Computer Engineer",
-            "location": "istanbul",
+            "Location": "istanbul",
             "major": ["computer engineering"],
             "date": "2011-2015",
             "information": "this major is so exciting major!",
@@ -143,9 +143,21 @@ for(var item in proj.projects[0].images){
     $(".project-entry").append(formattedProjImage);
 }
 
+for(var school in education.schools)
+{
+    $("#education").append(HTMLschoolStart);
+    $("#education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name);
+    $("#education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+    $("#education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].date);
+    $("#education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].Location);
+    $("#education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].major);
+}
 
-
-
+// var HTMLonlineClasses
+// var formattedOnlineTitle HTMLonlineTitle
+// var formattedOnlineSchool HTMLonlineSchool
+// var formattedOnlineDates HTMLonlineDates
+// var formattedOnlineURL HTMLonlineURL
 
 
 
