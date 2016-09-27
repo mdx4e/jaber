@@ -107,38 +107,39 @@ for(job in work.jobs)
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 $("#header").append(formattedName);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+$("#header").append(formattedRole);
 var formattedImage = HTMLbioPic.replace("%data%", bio.image);
 var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 $("#header").append(fortmattedImage);
 $("#header").append(formattedWelcomeMessage);
 
-$("#header").append(HTMLcontact);
-var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
-var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
-var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
+// $("#header").append(HTMLcontact);
+// var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
+// var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
+// var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
+// var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
+// var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 
-$("#contacts").append(formattedMobile);
-$("#contacts").append(formattedEmail);
-$("#contacts").append(formattedGithub);
-$("#contacts").append(formattedLocation);
-$("#contacts").append(formattedTwitter);
+// $("#contacts").append(formattedMobile);
+// $("#contacts").append(formattedEmail);
+// $("#contacts").append(formattedGithub);
+// $("#contacts").append(formattedLocation);
+// $("#contacts").append(formattedTwitter);
 
- $("#projects").append(HTMLprojectStart);
+//  $("#projects").append(HTMLprojectStart);
 
-var formattedProjTitle =  HTMLprojectTitle.replace("%data%",proj.projects.title);
-var formattedProjDates = HTMLprojectDates.replace("%data%",proj.projects.date);
-var formattedProjDescription = HTMLprojectDescription.replace("%data%",proj.projects.Description);
- $(".project-entry").append(formattedProjTitle);
-$(".project-entry").append(formattedProjDates);
-$(".project-entry").append(formattedProjDescription);
+// var formattedProjTitle =  HTMLprojectTitle.replace("%data%",proj.projects.title);
+// var formattedProjDates = HTMLprojectDates.replace("%data%",proj.projects.date);
+// var formattedProjDescription = HTMLprojectDescription.replace("%data%",proj.projects.Description);
+//  $(".project-entry").append(formattedProjTitle);
+// $(".project-entry").append(formattedProjDates);
+// $(".project-entry").append(formattedProjDescription);
                            
- var formattedProjImage;
-for(var item in proj.projects.images){
-    formattedProjImage = HTMLprojectImage.replace("%data%",proj.projects.images[item]);
-    $(".project-entry").append(formattedProjImage);
-}
+//  var formattedProjImage;
+// for(var item in proj.projects.images){
+//     formattedProjImage = HTMLprojectImage.replace("%data%",proj.projects.images[item]);
+//     $(".project-entry").append(formattedProjImage);
+// }
 
 
 
