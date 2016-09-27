@@ -169,7 +169,7 @@ $("#main").append(internationalizeButton);
 function inName(_str){
     var arr = _str.split();
     var len = _str.length;
-    var internationalized = arr[0].split(1 - len) + arr[0].split(0) + " " + arr[1];
+    var internationalized = arr[0].split(0) + " " + arr[1];
     console.log(internationalized);
 }
 
