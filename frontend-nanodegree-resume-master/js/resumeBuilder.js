@@ -2,7 +2,7 @@ $("#main").append(internationalizeButton);
 function inName(_str){
     var arr = _str.split(" ");
     var len = _str.length;
-    var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(0) + " " + arr[1].toUpperCase();
+    var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(1) + " " + arr[1].toUpperCase();
     console.log(internationalized);
 }
 var work = {
