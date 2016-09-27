@@ -167,7 +167,9 @@ displayWork();
 
 
 $(document).click(function(loc) {
-  logClicks(loc[0],loc[1]);
+    var x = loc.pageX;
+    var y = loc.pageY;
+  logClicks(x,y);
 });
 
 
