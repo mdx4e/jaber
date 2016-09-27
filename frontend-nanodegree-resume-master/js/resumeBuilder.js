@@ -169,8 +169,8 @@ $("#main").append(internationalizeButton);
 function inName(_str){
     var arr = _str.split();
     var len = _str.length;
-    var internationalized = arr[0].split(1 - len).toUpperCase() + arr[0].split(0) + " " + arr[1].toUpperCase();
-    return internationalized;
+    var internationalized = arr[0].split(1 - len) + arr[0].split(0) + " " + arr[1];
+    console.log(internationalized);
 }
 
 $(document).click(function(loc) {
