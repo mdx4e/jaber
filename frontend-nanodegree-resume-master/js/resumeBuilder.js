@@ -151,14 +151,14 @@ for(var school in education.schools)
     $(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].date));
     $(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].Location));
     $(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].major));
-    console.log(school);
 }
 
-// var HTMLonlineClasses
-// var formattedOnlineTitle HTMLonlineTitle
-// var formattedOnlineSchool HTMLonlineSchool
-// var formattedOnlineDates HTMLonlineDates
-// var formattedOnlineURL HTMLonlineURL
+$(".education-entry").append('<br>' + HTMLonlineClasses);
+$("#onc").append(HTMLonlineTitle);
+$("#onc").append(HTMLonlineSchool);
+$("#onc").append(HTMLonlineDates);
+$("#onc").append(HTMLonlineURL);
+
 
 
 
