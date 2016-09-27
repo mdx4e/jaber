@@ -4,6 +4,7 @@ function inName(){
     var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(1).toLowerCase() + " " + arr[1].toUpperCase();
     bio.name = internationalized;
     document.getElementById("name").innerHTML = bio.name;
+    proj.display();
 }
 var work = {
     "jobs": [{
@@ -134,21 +135,22 @@ $("#conts").append(formattedGithub);
 $("#conts").append(formattedLocation);
 $("#conts").append(formattedTwitter);
 
- $("#projects").append(HTMLprojectStart);
+proj.projects.display = function(){
+    $("#projects").append(HTMLprojectStart);
 
-var formattedProjTitle =  HTMLprojectTitle.replace("%data%", proj.projects[0].title);
-var formattedProjDates = HTMLprojectDates.replace("%data%", proj.projects[0].date);
-var formattedProjDescription = HTMLprojectDescription.replace("%data%", proj.projects[0].Description);
- $(".project-entry").append(formattedProjTitle);
-$(".project-entry").append(formattedProjDates);
-$(".project-entry").append(formattedProjDescription);
-                           
- var formattedProjImage;
-for(var item in proj.projects[0].images){
-    formattedProjImage = HTMLprojectImage.replace("%data%", proj.projects[0].images[item]);
-    $(".project-entry").append(formattedProjImage);
+    var formattedProjTitle =  HTMLprojectTitle.replace("%data%", proj.projects[0].title);
+    var formattedProjDates = HTMLprojectDates.replace("%data%", proj.projects[0].date);
+    var formattedProjDescription = HTMLprojectDescription.replace("%data%", proj.projects[0].Description);
+     $(".project-entry").append(formattedProjTitle);
+    $(".project-entry").append(formattedProjDates);
+    $(".project-entry").append(formattedProjDescription);
+
+     var formattedProjImage;
+    for(var item in proj.projects[0].images){
+        formattedProjImage = HTMLprojectImage.replace("%data%", proj.projects[0].images[item]);
+        $(".project-entry").append(formattedProjImage);
+    }
 }
-
 for(var school in education.schools)
 {
     $("#education").append(HTMLschoolStart);
