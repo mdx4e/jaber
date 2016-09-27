@@ -4,7 +4,6 @@ function inName(){
     var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(1).toLowerCase() + " " + arr[1].toUpperCase();
     bio.name = internationalized;
     document.getElementById("name").innerHTML = bio.name;
-    proj.display();
 }
 var work = {
     "jobs": [{
@@ -151,6 +150,9 @@ proj.display = function(){
         $(".project-entry").append(formattedProjImage);
     }
 }
+
+proj.display();
+
 for(var school in education.schools)
 {
     $("#education").append(HTMLschoolStart);
