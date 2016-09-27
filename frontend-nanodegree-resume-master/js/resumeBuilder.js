@@ -109,8 +109,9 @@ $("#header").append(formattedName);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 $("#header").append(formattedRole);
 var formattedImage = HTMLbioPic.replace("%data%", bio.image);
+$("#header").append(formattedImage);
 var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-$("#header").append(fortmattedImage);
+
 $("#header").append(formattedWelcomeMessage);
 
 // $("#header").append(HTMLcontact);
