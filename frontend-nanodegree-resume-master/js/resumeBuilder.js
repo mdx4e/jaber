@@ -94,14 +94,14 @@ if(bio.skills.length > 0){
       }
     }
 
-for(job in work.jobs)
-{
-    $("#workExperience").append(HTMLworkStart);
-    var formatHTMLworkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-    var formatHTMLworkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-    var cocat = formatHTMLworkEmployer + formatHTMLworkTitle;
-    $(".work-entry:last").append(cocat);
-    
+displayWork(){
+    for(job in work.jobs){
+        $("#workExperience").append(HTMLworkStart);
+        var formatHTMLworkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+        var formatHTMLworkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+        var cocat = formatHTMLworkEmployer + formatHTMLworkTitle;
+        $(".work-entry:last").append(cocat);    
+    }
 }
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
