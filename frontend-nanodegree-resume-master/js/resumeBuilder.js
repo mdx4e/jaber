@@ -167,7 +167,7 @@ displayWork();
 
 
 $(document).click(function(loc) {
-  logClicks(loc,loc);
+  logClicks(loc[0],loc[1]);
 });
 
 
