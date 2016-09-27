@@ -151,6 +151,7 @@ for(var school in education.schools)
     $(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].date));
     $(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].Location));
     $(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].major));
+    console.log(school);
 }
 
 // var HTMLonlineClasses
