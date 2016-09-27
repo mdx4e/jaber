@@ -143,7 +143,7 @@ for(var item in proj.projects[0].images){
     $(".project-entry").append(formattedProjImage);
 }
 
-for(var school in education.schools)
+for(var school in education.schools[])
 {
     $("#education").append(HTMLschoolStart);
     $(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name);
