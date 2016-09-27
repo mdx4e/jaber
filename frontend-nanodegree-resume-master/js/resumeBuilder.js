@@ -135,7 +135,7 @@ $("#conts").append(formattedGithub);
 $("#conts").append(formattedLocation);
 $("#conts").append(formattedTwitter);
 
-proj.projects.display = function(){
+var proj.projects.display = function(){
     $("#projects").append(HTMLprojectStart);
 
     var formattedProjTitle =  HTMLprojectTitle.replace("%data%", proj.projects[0].title);
