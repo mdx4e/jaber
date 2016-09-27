@@ -105,17 +105,15 @@ for(job in work.jobs)
 }
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
-
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-
 var formattedImage = HTMLbioPic.replace("%data%", bio.image);
-
 var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
 $("#header").append(formattedName);
 $("#header").append(formattedRole);
 $("#header").append(formattedImage);
 $("#header").append(formattedWelcomeMessage);
+
 // $("#header").append(HTMLcontact);
 // var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
 // var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
