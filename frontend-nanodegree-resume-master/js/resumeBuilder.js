@@ -116,10 +116,10 @@ $("#header").append(formattedWelcomeMessage);
 
 
 var formattedMobile = HTMLmobile.replace("%data%", bio.contact[0]);
-var formattedEmail = HTMLemail.replace("%data%", bio.contact[1].email);
-var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
+var formattedEmail = HTMLemail.replace("%data%", bio.contact[1]);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contact[2]);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contact[3]);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact[4]);
 
 $("#header").append(HTMLcontact);
 $("#contacts").append(formattedMobile);
