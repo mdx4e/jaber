@@ -4,7 +4,7 @@ function inName(){
     var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(1).toLowerCase() + " " + arr[1].toUpperCase();
     bio.name = internationalized;
     document.getElementById("name").innerHTML = bio.name;
-    proj.display;
+    proj.display();
 }
 var work = {
     "jobs": [{
