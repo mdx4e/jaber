@@ -1,4 +1,12 @@
-
+$("#main").append(internationalizeButton);
+function inName(_str){
+    var arr = _str.split(" ");
+    console.log("after splitting");
+    console.log(arr[0] + arr[1]);
+    var len = _str.length;
+    var internationalized = arr[0].charAt(0).toUpperCase() + " " + arr[1].toUpperCase();
+    console.log(internationalized);
+}
 var work = {
     "jobs": [{
          "employer": "Google",
@@ -165,13 +173,7 @@ $("#mapDiv").append(googleMap);
 
 displayWork();
 
-$("#main").append(internationalizeButton);
-function inName(_str){
-    var arr = _str.split(" ");
-    var len = _str.length;
-    var internationalized = arr[0].split(1) + " " + arr[1];
-    console.log(internationalized);
-}
+
 
 $(document).click(function(loc) {
     var x = loc.pageX;
