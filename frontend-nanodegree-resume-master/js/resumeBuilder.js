@@ -3,7 +3,7 @@ function inName(){
     var arr = bio.name.split(" ");
     var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(1).toLowerCase() + " " + arr[1].toUpperCase();
     bio.name = internationalized;
-    $("#name").replace(HTMLheaderName.replace("%data%",bio.name));
+    document.getElementById("name").innerHTML = bio.name;
 }
 var work = {
     "jobs": [{
