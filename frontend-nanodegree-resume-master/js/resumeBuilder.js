@@ -154,10 +154,10 @@ for(var school in education.schools)
 }
 
 $("education").append(HTMLonlineClasses);
-$("#onc").append(HTMLonlineTitle.replace("%data%", education.onlineCourses.title));
-$("#onc").append(HTMLonlineSchool.replace("%data%", education.onlineCourses.school));
-$("#onc").append(HTMLonlineDates.replace("%data%", education.onlineCourses.date));
-$("#onc").append(HTMLonlineURL.replace("%data%", education.onlineCourses.url));
+$("#onc").append(HTMLonlineTitle.replace("%data%", education.onlineCourses[0].title));
+$("#onc").append(HTMLonlineSchool.replace("%data%", education.onlineCourses[0].school));
+$("#onc").append(HTMLonlineDates.replace("%data%", education.onlineCourses[0].date));
+$("#onc").append(HTMLonlineURL.replace("%data%", education.onlineCourses[0].url));
 
 $("#mapDiv").append(googleMap);
 
