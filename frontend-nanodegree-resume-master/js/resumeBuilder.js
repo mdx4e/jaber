@@ -153,7 +153,7 @@ for(var school in education.schools)
     $(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].major));
 }
 
-$(".education-entry").append('<br>' + HTMLonlineClasses);
+$("education").append(HTMLonlineClasses);
 $("#onc").append(HTMLonlineTitle.replace("%data", education.onlineCourses.title));
 $("#onc").append(HTMLonlineSchool.replace("%data", education.onlineCourses.school));
 $("#onc").append(HTMLonlineDates.replace("%data", education.onlineCourses.date));
