@@ -165,13 +165,6 @@ $("#mapDiv").append(googleMap);
 
 displayWork();
 
-
-$(document).click(function(loc) {
-    var x = loc.pageX;
-    var y = loc.pageY;
-  logClicks(x,y);
-});
-
 $("#main").append(internationalizeButton);
 function inName(_str){
     var arr = _str.split();
@@ -179,6 +172,14 @@ function inName(_str){
     var internationalized = arr[0].split(1 - len).toUpperCase() + arr[0].split(0) + " " + arr[1].toUpperCase();
     return internationalized;
 }
+
+$(document).click(function(loc) {
+    var x = loc.pageX;
+    var y = loc.pageY;
+  logClicks(x,y);
+});
+
+
 
 
 
