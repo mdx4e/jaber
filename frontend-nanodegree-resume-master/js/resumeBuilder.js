@@ -167,9 +167,9 @@ displayWork();
 
 $("#main").append(internationalizeButton);
 function inName(_str){
-    var arr = _str.split();
+    var arr = _str.split(" ");
     var len = _str.length;
-    var internationalized = arr[0].split(1 - arr[0].length) + " " + arr[1];
+    var internationalized = arr[0].split(1) + " " + arr[1];
     console.log(internationalized);
 }
 
