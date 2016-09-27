@@ -4,7 +4,7 @@ function inName(){
     var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(1).toLowerCase() + " " + arr[1].toUpperCase();
     bio.name = internationalized;
     document.getElementById("name").innerHTML = bio.name;
-    proj.display();
+    proj.display;
 }
 var work = {
     "jobs": [{
@@ -135,7 +135,7 @@ $("#conts").append(formattedGithub);
 $("#conts").append(formattedLocation);
 $("#conts").append(formattedTwitter);
 
-proj.projects.display() = function(){
+proj.projects.display = function(){
     $("#projects").append(HTMLprojectStart);
 
     var formattedProjTitle =  HTMLprojectTitle.replace("%data%", proj.projects[0].title);
