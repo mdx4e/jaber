@@ -146,11 +146,11 @@ for(var item in proj.projects[0].images){
 for(var school in education.schools)
 {
     $("#education").append(HTMLschoolStart);
-    $("#education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name);
-    $("#education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-    $("#education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].date);
-    $("#education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].Location);
-    $("#education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].major);
+    $(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name);
+    $(".education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+    $(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].date);
+    $(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].Location);
+    $(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].major);
 }
 
 // var HTMLonlineClasses
