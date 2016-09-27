@@ -151,7 +151,7 @@ proj.display = function(){
     }
 }
 
-proj.display();
+
 
 for(var school in education.schools)
 {
