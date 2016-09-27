@@ -130,9 +130,9 @@ $("#conts").append(formattedTwitter);
 
  $("#projects").append(HTMLprojectStart);
 
-var formattedProjTitle =  HTMLprojectTitle.replace("%data%", proj.projects.title);
-var formattedProjDates = HTMLprojectDates.replace("%data%", proj.projects.date);
-var formattedProjDescription = HTMLprojectDescription.replace("%data%", proj.projects.Description);
+var formattedProjTitle =  HTMLprojectTitle.replace("%data%", proj.projects[0].title);
+var formattedProjDates = HTMLprojectDates.replace("%data%", proj.projects[0].date);
+var formattedProjDescription = HTMLprojectDescription.replace("%data%", proj.projects[0].Description);
  $(".project-entry").append(formattedProjTitle);
 $(".project-entry").append(formattedProjDates);
 $(".project-entry").append(formattedProjDescription);
