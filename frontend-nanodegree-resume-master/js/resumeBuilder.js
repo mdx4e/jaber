@@ -1,9 +1,8 @@
 $("#main").append(internationalizeButton);
-function inName(_str){
-    var arr = _str.split(" ");
-    var len = _str.length;
-    var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(1) + " " + arr[1].toUpperCase();
-    return internationalized;
+function inName(){
+    var arr = bio.name.split(" ");
+    var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(1).toLowerCase() + " " + arr[1].toUpperCase();
+    bio.name = internationalized;
 }
 var work = {
     "jobs": [{
@@ -57,7 +56,7 @@ var education = {
 };
 
 var bio = {
-  "name":"Muhammad",
+  "name":"muhammad jaber",
   "role":"Computer Engineer",
   "contact": { "mobile":"0503235331",
                 "email":"muhammad.sce@gmail.com",
