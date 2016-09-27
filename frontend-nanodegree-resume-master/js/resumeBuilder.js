@@ -137,11 +137,11 @@ var formattedProjDescription = HTMLprojectDescription.replace("%data%", proj.pro
 $(".project-entry").append(formattedProjDates);
 $(".project-entry").append(formattedProjDescription);
                            
-//  var formattedProjImage;
-// for(var item in proj.projects.images){
-//     formattedProjImage = HTMLprojectImage.replace("%data%", proj.projects.images[item]);
-//     $(".project-entry").append(formattedProjImage);
-// }
+ var formattedProjImage;
+for(var item in proj.projects[0].images){
+    formattedProjImage = HTMLprojectImage.replace("%data%", proj.projects[0].images[item]);
+    $(".project-entry").append(formattedProjImage);
+}
 
 
 
