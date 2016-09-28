@@ -83,8 +83,8 @@ var proj = {
     ]
 };
 
-
-if(bio.skills.length > 0){
+bio.display = function(){
+    if(bio.skills.length > 0){
       var fskill;
       $("#header").append(HTMLskillsStart);
       for(var i = 0; i < bio.skills.length; i++){
@@ -92,8 +92,19 @@ if(bio.skills.length > 0){
         $("#skills").append(fskill);
       }
     }
+    $("#header").append(HTMLheaderName.replace("%data%", bio.name));
+    $("#header").append(HTMLheaderRole.replace("%data%", bio.role);
+    $("#header").append(HTMLbioPic.replace("%data%", bio.image));
+    $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+    $("#header").append(HTMLcontact);
+    $("#conts").append(HTMLmobile.replace("%data%", bio.contact.mobile));
+    $("#conts").append(HTMLemail.replace("%data%", bio.contact.email));
+    $("#conts").append(HTMLgithub.replace("%data%", bio.contact.github));
+    $("#conts").append(HTMLlocation.replace("%data%", bio.contact.location));
+    $("#conts").append(HTMLtwitter.replace("%data%", bio.contact.twitter));
+}
 
-function displayWork(){
+work.display = function(){
     for(job in work.jobs){
         $("#workExperience").append(HTMLworkStart);
         var formatHTMLworkEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -103,78 +114,48 @@ function displayWork(){
     }
 }
 
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedImage = HTMLbioPic.replace("%data%", bio.image);
-var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-
-$("#header").append(formattedName);
-$("#header").append(formattedRole);
-$("#header").append(formattedImage);
-$("#header").append(formattedWelcomeMessage);
-
-
-var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
-var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
-var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
-
-$("#header").append(HTMLcontact);
-$("#conts").append(formattedMobile);
-$("#conts").append(formattedEmail);
-$("#conts").append(formattedGithub);
-$("#conts").append(formattedLocation);
-$("#conts").append(formattedTwitter);
 
 proj.display = function(){
     $("#projects").append(HTMLprojectStart);
+    $(".project-entry").append(HTMLprojectTitle.replace("%data%", proj.projects[0].title);
+    $(".project-entry").append(HTMLprojectDates.replace("%data%", proj.projects[0].date);
+    $(".project-entry").append(HTMLprojectDescription.replace("%data%", proj.projects[0].Description);
 
-    var formattedProjTitle =  HTMLprojectTitle.replace("%data%", proj.projects[0].title);
-    var formattedProjDates = HTMLprojectDates.replace("%data%", proj.projects[0].date);
-    var formattedProjDescription = HTMLprojectDescription.replace("%data%", proj.projects[0].Description);
-     $(".project-entry").append(formattedProjTitle);
-    $(".project-entry").append(formattedProjDates);
-    $(".project-entry").append(formattedProjDescription);
-
-     var formattedProjImage;
     for(var item in proj.projects[0].images){
-        formattedProjImage = HTMLprojectImage.replace("%data%", proj.projects[0].images[item]);
-        $(".project-entry").append(formattedProjImage);
+        $(".project-entry").append(HTMLprojectImage.replace("%data%", proj.projects[0].images[item]);
     }
 }
 
-proj.display();
-
-for(var school in education.schools)
-{
-    $("#education").append(HTMLschoolStart);
-    $(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name));
-    $(".education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree));
-    $(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].date));
-    $(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].location));
-    $(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].major));
+eduction.display = function(){
+    for(var school in education.schools){
+        $("#education").append(HTMLschoolStart);
+        $(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name));
+        $(".education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree));
+        $(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].date));
+        $(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].location));
+        $(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].major));
+    }
+    $("#education").append(HTMLonlineClasses);
+    $("#onc").append(HTMLonlineTitle.replace("%data%", education.onlineCourses[0].title));
+    $("#onc").append(HTMLonlineSchool.replace("%data%", education.onlineCourses[0].school));
+    $("#onc").append(HTMLonlineDates.replace("%data%", education.onlineCourses[0].date));
+    $("#onc").append(HTMLonlineURL.replace("%data%", education.onlineCourses[0].url));
 }
-
-$("#education").append(HTMLonlineClasses);
-$("#onc").append(HTMLonlineTitle.replace("%data%", education.onlineCourses[0].title));
-$("#onc").append(HTMLonlineSchool.replace("%data%", education.onlineCourses[0].school));
-$("#onc").append(HTMLonlineDates.replace("%data%", education.onlineCourses[0].date));
-$("#onc").append(HTMLonlineURL.replace("%data%", education.onlineCourses[0].url));
-
+        
 $("#mapDiv").append(googleMap);
 
-
-
-displayWork();
-
-$("#main").append(internationalizeButton);
 function inName(){
     var arr = bio.name.split(" ");
     var internationalized = arr[0].charAt(0).toUpperCase() + arr[0].slice(1).toLowerCase() + " " + arr[1].toUpperCase();
     bio.name = internationalized;
     document.getElementById("name").innerHTML = bio.name;
 }
+        
+bio.display();
+work.display();
+proj.display();
+education.disply();
+inName();
 
 $(document).click(function(loc) {
     var x = loc.pageX;
