@@ -62,8 +62,8 @@ h5 {
 }
 
 .flex-item{
-   display: flex;
-    flex-flow: row-reverse wrap;
+  display: flex;   
+    flex-flow:row nowrap;
 }
 
 .date-text {
