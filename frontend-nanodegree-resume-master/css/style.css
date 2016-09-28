@@ -1,6 +1,6 @@
 .eh{
   padding-left: 9%;
-  list-style: true;
+  list-style: circle;
 }
 .flex-column {
   display: flex;
