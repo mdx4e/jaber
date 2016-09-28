@@ -57,7 +57,7 @@ var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
 var internationalizeButton = '<button onclick="inName()">Internationalize</button>';
-var googleMap = '<div id="map"><script src="http://maps.googleapis.com/maps/api/js?libraries=Istanbul&key=AIzaSyCYf_p7Mt7JD0XIlIlwAwoKZrnLw5yrX80"></script></div>';
+var googleMap = '<div id="map"></div>';
 
 
 /*
