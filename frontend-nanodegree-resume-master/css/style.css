@@ -1,5 +1,6 @@
 .eh{
-  padding-left: 10%;
+  padding-left: 9%;
+  list-style: true;
 }
 .flex-column {
   display: flex;
