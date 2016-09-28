@@ -1,6 +1,8 @@
+.st{
+    list-style: circle;
+}
 .eh{
   padding-left: 9%;
-  list-style: circle;
 }
 .flex-column {
   display: flex;
