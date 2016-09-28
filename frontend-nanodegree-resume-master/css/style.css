@@ -62,7 +62,8 @@ h5 {
 }
 
 .flex-item{
-  text-align: justify;
+   display: flex;
+    flex-flow: row-reverse wrap;
 }
 
 .date-text {
