@@ -126,7 +126,7 @@ proj.display = function(){
     }
 }
 
-eduction.display = function(){
+education.display = function(){
     for(var school in education.schools){
         $("#education").append(HTMLschoolStart);
         $(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name));
