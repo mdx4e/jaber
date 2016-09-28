@@ -154,7 +154,7 @@ function inName(){
 bio.display();
 work.display();
 proj.display();
-education.disply();
+education.display();
 inName();
 
 $(document).click(function(loc) {
