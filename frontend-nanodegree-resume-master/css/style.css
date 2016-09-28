@@ -3,8 +3,8 @@
     list-style: circle;
 }
 .eh{
-  width: 200px;
-  padding-left: 0;
+  
+  padding-right: 50px;
 }
 .flex-column {
   display: flex;
