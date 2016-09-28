@@ -56,7 +56,7 @@ var bio = {
                 "email":"muhammad.sce@gmail.com",
                 "github":"mdx4e",
                 "twitter":"muhammad.sce",
-                "location":"Taybe city, 24 southern quarters."
+                "location":"Israel"
       },
   "skills":["oud player", "clever", "awesome", "human", "friendly"],
   "image":"images/me.jpg",
