@@ -3,9 +3,9 @@
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 10px;
+  text-align: center;
 }
 .flex-item{
-  padding-left: 5%;
   width: 150px;
 }
 body,
