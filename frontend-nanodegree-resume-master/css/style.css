@@ -1,3 +1,12 @@
+.flex-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+.flex-item{
+  width: 40px;
+}
 body,
 div,
 ul,
@@ -142,13 +151,7 @@ a {
   padding: 10px;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
-  padding: 10px;
-}
+
 
 .center-content {
   padding: 2.5% 5%;
