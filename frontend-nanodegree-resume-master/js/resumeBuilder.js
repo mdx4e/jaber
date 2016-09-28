@@ -93,9 +93,9 @@ bio.display = function(){
       }
     }
     $("#header").append(HTMLheaderName.replace("%data%", bio.name));
-    $("#header").append(HTMLheaderRole.replace("%data%", bio.role);
+    $("#header").append(HTMLheaderRole.replace("%data%", bio.role));
     $("#header").append(HTMLbioPic.replace("%data%", bio.image));
-    $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+    $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
     $("#header").append(HTMLcontact);
     $("#conts").append(HTMLmobile.replace("%data%", bio.contact.mobile));
     $("#conts").append(HTMLemail.replace("%data%", bio.contact.email));
@@ -117,12 +117,12 @@ work.display = function(){
 
 proj.display = function(){
     $("#projects").append(HTMLprojectStart);
-    $(".project-entry").append(HTMLprojectTitle.replace("%data%", proj.projects[0].title);
-    $(".project-entry").append(HTMLprojectDates.replace("%data%", proj.projects[0].date);
-    $(".project-entry").append(HTMLprojectDescription.replace("%data%", proj.projects[0].Description);
+    $(".project-entry").append(HTMLprojectTitle.replace("%data%", proj.projects[0].title));
+    $(".project-entry").append(HTMLprojectDates.replace("%data%", proj.projects[0].date));
+    $(".project-entry").append(HTMLprojectDescription.replace("%data%", proj.projects[0].Description));
 
     for(var item in proj.projects[0].images){
-        $(".project-entry").append(HTMLprojectImage.replace("%data%", proj.projects[0].images[item]);
+        $(".project-entry").append(HTMLprojectImage.replace("%data%", proj.projects[0].images[item]));
     }
 }
 
