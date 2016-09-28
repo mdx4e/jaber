@@ -146,7 +146,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 10%;
+  padding: 30px;
 }
 
 .center-content {
