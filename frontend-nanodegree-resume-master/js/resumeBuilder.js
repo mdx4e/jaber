@@ -21,7 +21,7 @@ var education = {
         {
             "name":"Atid High School",
             "degree":"High school degree",
-            "Location": "Taybah",
+            "location": "Taybah",
             "major": ["physics","computer science"],
             "date": "2005-2007",
             "information": "this major is one of the best once!",
@@ -30,7 +30,7 @@ var education = {
         {
             "name":"Bahcesehir university",
             "degree":"B.SC Computer Engineer",
-            "Location": "istanbul",
+            "location": "istanbul",
             "major": ["computer engineering"],
             "date": "2011-2015",
             "information": "this major is so exciting major!",
@@ -56,7 +56,7 @@ var bio = {
                 "email":"muhammad.sce@gmail.com",
                 "github":"mdx4e",
                 "twitter":"muhammad.sce",
-                "Location":"Taybe city, 24 southern quarters."
+                "location":"Taybe city, 24 southern quarters."
       },
   "skills":["oud player", "clever", "awesome", "human", "friendly"],
   "image":"images/me.jpg",
@@ -117,7 +117,7 @@ $("#header").append(formattedWelcomeMessage);
 var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
 var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
 var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contact.Location);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
 var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact.twitter);
 
 $("#header").append(HTMLcontact);
@@ -152,7 +152,7 @@ for(var school in education.schools)
     $(".education-entry").append(HTMLschoolName.replace("%data%", education.schools[school].name));
     $(".education-entry").append(HTMLschoolDegree.replace("%data%", education.schools[school].degree));
     $(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].date));
-    $(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].Location));
+    $(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].location));
     $(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].major));
 }
 
