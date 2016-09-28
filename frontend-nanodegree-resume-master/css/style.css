@@ -1,13 +1,12 @@
 .ah{
-  padding-left: 30%; 
+  padding-left: 400px; 
 }
 .st{
    
     list-style: circle;
 }
 .eh{
-  
-  padding-right: 50px;
+  padding-right: 15%;
 }
 .flex-column {
   display: flex;
